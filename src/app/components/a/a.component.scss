@@ -1,0 +1,21 @@
+.wrapper {
+    display: grid;
+    gap: 10px;
+    border: 2px solid;
+    padding: 10px;
+
+    .flex{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        button{
+            padding: 5px 10px;
+        }
+
+        .array{
+            display: flex;
+            gap: 5px;
+        }
+    }
+}

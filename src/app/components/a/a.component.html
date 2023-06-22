@@ -1,0 +1,21 @@
+<div class="wrapper">
+    <h2>Component A</h2>
+    
+    <div class="flex">
+        <button (click)="plus()">add 1</button>
+        <p>value: {{value()}}</p>
+    </div>
+    <div class="flex">
+        <button (click)="append()">append</button>
+        <p class="array">
+            <span>reference: [</span>
+            <span class="array">
+                <ng-container *ngFor="let item of reference(); let isLast = last">
+                    <span>{{item}}</span>
+                    <span *ngIf="!isLast">,</span>
+                </ng-container>
+            </span>
+            <span>]</span>
+        </p>
+    </div>
+</div>

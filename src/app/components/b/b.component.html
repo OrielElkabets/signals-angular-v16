@@ -1,0 +1,9 @@
+<div class="wrapper">
+    <h2>Component B</h2>
+    <div class="flex">
+        <input type="number" [(ngModel)]="number">
+        <button (click)="setValue()">set value</button>
+        <p>value: {{value()}}</p>
+    </div>
+    <p>computed: {{computedSignal()}}</p>
+</div>
